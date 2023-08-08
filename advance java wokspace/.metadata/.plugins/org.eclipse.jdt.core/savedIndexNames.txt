@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\rays software\workspace\advance java wokspace\.metadata\.plugins\org.eclipse.jdt.core
+3463425493.index
+3639966854.index
+1024446143.index

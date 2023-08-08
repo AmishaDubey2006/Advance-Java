@@ -1,0 +1,59 @@
+package in.co.practicework;
+
+import in.co.rays.marksheet.MarksheetBean;
+import in.co.rays.marksheet.MarksheetModel;
+
+public class TestEmployee1 {
+	private static final String VijayNagar = null;
+
+	public static void main(String[] args) throws Exception {
+		testAdd();
+		//	testUpdate();
+		//	 testDelete();
+		}
+
+		private static void testDelete() throws Exception {
+
+			Employee1Model model = new Employee1Model();
+			model.delete(7);
+		}
+
+		private static void testUpdate() throws Exception {
+			Employee1Bean bean = new Employee1Bean();
+
+			bean.setId(7);
+			bean.setName("Deepak");
+			bean.setSalary(25000);
+			bean.setAddress(VijayNagar);
+			bean.setHr(2500);
+			bean.setJoiningdate(28/8/2002);
+			bean.setPresent(360/365);
+			bean.setE_id((Integer) null);
+
+			Employee1Model model = new Employee1Model();
+
+			model.update(bean);
+		}
+
+		public static void testAdd() throws Exception {
+			Employee1Bean bean = new Employee1Bean();
+
+			bean.setId(7);
+			bean.setName("Deepak");
+			bean.setSalary(25000);
+			bean.setAddress(VijayNagar);
+			bean.setHr(2500);
+			bean.setJoiningdate(28/8/2002);
+			bean.setPresent(360/365);
+			bean.setE_id((Integer) null);
+
+			Employee1Model model = new Employee1Model();
+			model.add(bean);
+
+		
+
+	
+
+	}
+
+}

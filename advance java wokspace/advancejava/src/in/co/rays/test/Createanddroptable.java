@@ -1,0 +1,21 @@
+package in.co.rays.test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Createanddroptable {
+	public static void main(String[] args) throws Exception {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","root");
+		Statement stmt = conn.createStatement();
+	
+	//	int i = stmt.executeUpdate("Delete from TCS where id = 8");
+		
+		int i = stmt.executeUpdate("alter table TCS add Contact_no int");
+		
+	//	System.out.println("Data Deleted");
+		System.out.println("Column added");
+		
+
+}}

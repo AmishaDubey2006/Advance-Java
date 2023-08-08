@@ -1,0 +1,27 @@
+package in.co.rays.test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class CreateTable {
+	public static void main(String[] args) throws Exception {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","root");
+		Statement stmt = conn.createStatement();
+	  
+	//	int i = stmt.executeUpdate(" create table TCS(id int primary key,name varchar(80),salary int)");
+		
+	 int i = stmt.executeUpdate(" insert into TCS values(1, 'Priyanshu Sahu' ,20000)");
+		 i = stmt.executeUpdate(" insert into TCS values(2, 'Rahul Sharma' ,30000)");
+		 i = stmt.executeUpdate(" insert into TCS values(3, 'Rudra Prajapat' ,35000)");
+		 i = stmt.executeUpdate(" insert into TCS values(4, 'Ritika Tiwari' ,20000)");
+		 i = stmt.executeUpdate(" insert into TCS values(5, 'Reema Chauhan' ,40000)");
+		 i = stmt.executeUpdate(" insert into TCS values(6, 'Himangi Bhatt' ,45000)");
+		
+		System.out.println("Table Created");
+		System.out.println("Data Inserted");
+	}
+
+}
